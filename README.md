@@ -8,3 +8,14 @@ Project timeline
 24:00 : Brainstorming
 
 19:20 : Finalised idea, started UI design, database structure, ranking algorithm ideas
+
+
+
+
+
+Unimplemented ideas:
+ 
+- Referee needed button
+- Tournament option
+- Beginner sessions/Trials
+- 
