@@ -11,11 +11,15 @@ Project timeline
 
 18:00 : 
 - Luigi - UI mockup design
-- Anthony - Map implementation
+- Anthony - Map research
 - Chris - Sports selection
 - Johan - Dev log, sorting algorithm 
 
-
+17:00 : 
+- Luigi - UI mockup design complete, starting work on ranking algorithm
+- Anthony - Got google maps API working 
+- Chris - Sport selection UI 50% done
+- Johan - Dev log, Implementation of sorting algorithm
 
 
 
