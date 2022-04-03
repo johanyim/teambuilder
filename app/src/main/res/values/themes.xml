@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Teambuilder" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#8B8B8B</item>
+    </style>
+</resources>
