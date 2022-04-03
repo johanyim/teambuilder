@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>HomeViewModel.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+HomeViewModel.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.example.mainpage.ui.home
+
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+
+<span class="s0">class </span>HomeViewModel : ViewModel() {
+
+    private <span class="s0">val </span>_text = MutableLiveData&lt;String&gt;().apply {
+        value = <span class="s2">&quot;This is home Fragment&quot;</span>
+    }
+    <span class="s0">val </span>text: LiveData&lt;String&gt; = _text
+}</pre>
+</body>
+</html>

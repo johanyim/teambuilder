@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>MainActivity.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #808080; font-style: italic;}
+.s3 { color: #008000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainActivity.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.example.mainpage
+<span class="s2">//package com.example.searchspinner</span>
+
+import android.os.Bundle
+import android.widget.ArrayAdapter
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
+import android.view.View
+import android.widget.*
+
+<span class="s0">class </span>MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
+
+    private <span class="s0">var </span>sports = arrayOf(
+            <span class="s3">&quot;Select Sport&quot;</span>,
+        <span class="s3">&quot;American Football&quot;</span>,
+        <span class="s3">&quot;Archery&quot;</span>,
+        <span class="s3">&quot;Badminton&quot;</span>,
+        <span class="s3">&quot;Baseball&quot;</span>,
+        <span class="s3">&quot;Basketball&quot;</span>,
+        <span class="s3">&quot;Beach Volleyball&quot;</span>,
+        <span class="s3">&quot;Bowling&quot;</span>,
+        <span class="s3">&quot;Boxing&quot;</span>,
+        <span class="s3">&quot;Canoeing&quot;</span>,
+        <span class="s3">&quot;Cheerleading&quot;</span>,
+        <span class="s3">&quot;Climbing&quot;</span>,
+        <span class="s3">&quot;Cricket&quot;</span>,
+        <span class="s3">&quot;Crossfit&quot;</span>,
+        <span class="s3">&quot;Curling&quot;</span>,
+        <span class="s3">&quot;Cycling&quot;</span>,
+        <span class="s3">&quot;Dance&quot;</span>,
+        <span class="s3">&quot;Dodgeball&quot;</span>,
+        <span class="s3">&quot;Equestrian&quot;</span>,
+        <span class="s3">&quot;Fencing&quot;</span>,
+        <span class="s3">&quot;Fishing&quot;</span>,
+        <span class="s3">&quot;Football&quot;</span>,
+        <span class="s3">&quot;Golf&quot;</span>,
+        <span class="s3">&quot;Gym&quot;</span>,
+        <span class="s3">&quot;Handball&quot;</span>,
+        <span class="s3">&quot;Ice Hockey&quot;</span>,
+        <span class="s3">&quot;Ice Skating&quot;</span>,
+        <span class="s3">&quot;Javelin&quot;</span>,
+        <span class="s3">&quot;Judo&quot;</span>,
+        <span class="s3">&quot;Karate&quot;</span>,
+        <span class="s3">&quot;Kickball&quot;</span>,
+        <span class="s3">&quot;Lacrosse&quot;</span>,
+        <span class="s3">&quot;Powerlifting&quot;</span>,
+        <span class="s3">&quot;Rowing&quot;</span>,
+        <span class="s3">&quot;Rugby&quot;</span>,
+        <span class="s3">&quot;Skateboarding&quot;</span>,
+        <span class="s3">&quot;Table Tennis&quot;</span>,
+        <span class="s3">&quot;Tennis&quot;</span>,
+        <span class="s3">&quot;Ultimate Frisbee&quot;</span>,
+        <span class="s3">&quot;Volleyball&quot;</span>,
+        <span class="s3">&quot;Weightlifting&quot;</span>
+    )
+
+    private <span class="s0">var </span>ability = arrayOf(
+            <span class="s3">&quot;Select Ability&quot;</span>,
+            <span class="s3">&quot;Beginner&quot;</span>,
+            <span class="s3">&quot;Intermediate&quot;</span>,
+            <span class="s3">&quot;Advanced&quot;</span>,
+            <span class="s3">&quot;Expert&quot;</span>
+    )
+
+
+    override <span class="s0">fun </span>onCreate(savedInstanceState: Bundle?) {
+        <span class="s0">super</span>.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_groups)
+<span class="s2">//        SearchSpinner()</span>
+<span class="s2">//        Spinner()</span>
+    }
+
+    private <span class="s0">fun </span>SearchSpinner() {
+        <span class="s0">val </span>searchmethod = ArrayAdapter(<span class="s0">this</span>, android.R.layout.simple_spinner_item,sports)
+        searchmethod.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner_view!!.adapter = searchmethod
+    }
+
+    private <span class="s0">fun </span>Spinner(){
+
+        spinner!!.setOnItemSelectedListener(<span class="s0">this</span>)
+
+        <span class="s2">// Create an ArrayAdapter using a simple spinner layout and languages array</span>
+        <span class="s0">val </span>aa = ArrayAdapter(<span class="s0">this</span>, android.R.layout.simple_spinner_item, ability)
+        <span class="s2">// Set layout to use when the list of choices appear</span>
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        <span class="s2">// Set Adapter to Spinner</span>
+        spinner!!.setAdapter(aa)
+    }
+
+    override <span class="s0">fun </span>onNothingSelected(parent: AdapterView&lt;*&gt;?) {
+    }
+
+    override <span class="s0">fun </span>onItemSelected(parent: AdapterView&lt;*&gt;?, view: View?, position: Int, id: Long) {
+    }
+}</pre>
+</body>
+</html>
