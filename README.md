@@ -33,3 +33,4 @@ Unimplemented ideas:
 - Integrated Booking
 - Join as spectator
 - Age limits
+- Free to play status indicator
